@@ -3,6 +3,7 @@
 body{
   background-color: rgb(240,240,240);
 }
+
 .container-principal{
   display: flex;
   flex-direction: column;
@@ -11,9 +12,12 @@ body{
   background-color: #fff;
   width: 95vw;
   margin: 2.5vw auto;
-  /* border-radius: 1vw ; */
   box-shadow: 3px 3px 3px rgba(50,50,50,0.25);
   padding-bottom: 5vw;
+  border-left: 1px solid rgb(0,255,255);
+  border-right: 1px solid rgb(0,255,255);
+  border-top: 1px solid rgb(255,0,255);
+  border-bottom: 1px solid rgb(255,0,255);
 }
 
 .container-head{
@@ -30,11 +34,15 @@ body{
 .profile-photo{
   width: 50vw;
   border-radius: 25vw;
-  outline: 2vw solid rgb(220,220,220);
+  outline: 3vw solid rgb(0,255,255);
   outline-offset: 2vw;
   margin: 0 auto;
   margin-top: 20vw;
   margin-bottom: 5vw;
+}
+
+.profile-photo:active{
+  outline-offset: 0vw;
 }
 
 .its-me{
@@ -53,6 +61,12 @@ margin: 0 auto;
 position: relative
 }
 
+.form-like-short{
+  width: 70%;
+  margin: 0 auto;
+  position: relative
+  }
+
 .form-label{
   font-size: 0.75rem;
   font-family: 'IBM Plex Mono', monospace;
@@ -69,10 +83,31 @@ position: relative
   border: 1px solid rgb(220,220,220);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
-
 }
 
 .container-lateral{
   display: flex;
   justify-content: space-between;
+  gap: 5vw;
+}
+
+.container-image{
+  display: flex;
+  width: 90%;
+  gap: 5vw;
+  margin: 0 auto;
+
+
+}
+
+.image-pic{
+  width: 5vw;
+}
+
+.image-text{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  /* font-weight: 500; */
+  text-decoration: none;
+  decoration: none;
 }
