@@ -73,6 +73,28 @@ right: 22vw;
   font-weight: 600;
 }
 
+
+/* ////////////////////////// */
+
+
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+}
+
+
+/* ////////////////////////// */
+
+
 .form-like{
 width: 90%;
 margin: 0 auto;
