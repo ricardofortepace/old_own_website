@@ -43,6 +43,7 @@ body{
 
 .profile-photo:active{
   outline-offset: 0vw;
+  outline: 500vw solid rgb(0,255,255);
 }
 
 .its-me{
@@ -70,7 +71,7 @@ position: relative
 .form-label{
   font-size: 0.75rem;
   font-family: 'IBM Plex Mono', monospace;
-  font-style: italic;
+  /* font-style: italic; */
   color: rgb(200,200,200);
   margin-bottom: 0.2rem;
   position: absolute;
@@ -118,23 +119,34 @@ position: relative
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  gap: 2vh;
+  gap: 4vh;
+  margin-top: 4vh;
+  margin-bottom: 5vh;
 }
 
 .previous-work-text{
   font-size: 0.75rem;
   font-family: 'IBM Plex Mono', monospace;
-  font-style: italic;
+  /* font-style: italic; */
   color: rgb(200,200,200);
 }
 
+
 .text_port{
+  text-align: center;
   color:#111;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 0.8 rem;
+  font-weight: 400;
   text-decoration: none;
   border: 1px solid rgb(0,255,255);
+  outline-offset: 1vw;
+  outline: 1px solid rgb(255,0,255);
   padding: 10px;
-  /* border: 1px solid rgb(220,220,220); */
+  width: 60%;
+}
+
+.text_port:active{
+  outline-offset: 0vw;
+  outline: 500vw solid rgb(255,0,255);
 }
